@@ -1,8 +1,8 @@
 # NoteX
 
-A notes and checklist app built with React. Notes are saved in the browser, so there's no account or backend.
+![CI](https://github.com/Sudhanshu-Pandey-18/notes-app/actions/workflows/ci.yml/badge.svg)
 
-**Live demo:** https://sudhanshu-pandey-18.github.io/notex/
+A notes and checklist app built with React. Notes are saved in the browser, so there's no account or backend.
 
 ![NoteX in light mode](docs/screenshot-light.png)
 
@@ -23,7 +23,7 @@ A notes and checklist app built with React. Notes are saved in the browser, so t
 - Note state lives in a `useReducer`. All the logic (create, update, delete, restore, search, sort) is plain functions in `src/lib/notes.js`, which keeps it easy to test
 - A small `useNotes` hook loads and saves notes to `localStorage`
 - Tests with Vitest and React Testing Library cover the note logic and the main user flows
-- GitHub Actions runs lint and tests on every push and deploys the build to GitHub Pages
+- GitHub Actions runs lint, tests and a production build on every push
 
 ```
 src/
@@ -38,6 +38,8 @@ src/
 ## Running locally
 
 ```bash
+git clone https://github.com/Sudhanshu-Pandey-18/notes-app.git
+cd notes-app
 npm install
 npm run dev      # http://localhost:5173
 npm test         # run the tests
@@ -46,4 +48,4 @@ npm run build    # production build in dist/
 
 ## Background
 
-This started as two small exercises from a web development course: a React notes app and a plain JavaScript to-do list. I rebuilt them as one app, fixed a bug where deleting a note removed every note with the same title, and added editing, search, checklists, undo, tests and deployment.
+This started as two small exercises from a web development course: a React notes app and a plain JavaScript to-do list. I rebuilt them as one app, fixed a bug where deleting a note removed every note with the same title, and added editing, search, checklists, undo and tests.

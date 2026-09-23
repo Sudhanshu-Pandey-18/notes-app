@@ -3,7 +3,7 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [react()],
-  // Relative asset paths so the build works on GitHub Pages under /<repo-name>/
+  // Relative asset paths so the built files work from any folder
   base: './',
   test: {
     environment: 'jsdom',
