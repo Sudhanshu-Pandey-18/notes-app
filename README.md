@@ -1,7 +1,5 @@
 # NoteX
 
-![CI](https://github.com/Sudhanshu-Pandey-18/notes-app/actions/workflows/ci.yml/badge.svg)
-
 A notes and checklist app built with React. Notes are saved in the browser, so there's no account or backend.
 
 ![NoteX in light mode](docs/screenshot-light.png)
