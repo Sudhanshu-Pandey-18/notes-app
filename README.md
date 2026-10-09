@@ -2,6 +2,8 @@
 
 A notes and checklist app built with React. Notes are saved in the browser, so there's no account or backend.
 
+**Live app:** https://sudhanshu-pandey-18.github.io/notes-app/
+
 ![NoteX in light mode](docs/screenshot-light.png)
 
 ## Features
@@ -22,6 +24,7 @@ A notes and checklist app built with React. Notes are saved in the browser, so t
 - A small `useNotes` hook loads and saves notes to `localStorage`
 - Tests with Vitest and React Testing Library cover the note logic and the main user flows
 - GitHub Actions runs lint, tests and a production build on every push
+- A second workflow runs the tests, builds the app and deploys it to GitHub Pages on every push to `main`
 
 ```
 src/
@@ -31,6 +34,9 @@ src/
   lib/notes.js          note logic (reducer, search, sorting)
   lib/notes.test.js     unit tests
   App.test.jsx          UI tests
+.github/workflows/
+  ci.yml                lint, tests and build on every push
+  deploy.yml            tests, build and deploy to GitHub Pages
 ```
 
 ## Running locally
